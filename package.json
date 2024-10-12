@@ -1,7 +1,7 @@
 {
   "name": "file-manager",
   "version": "1.0.0",
-  "description": "This repository is the part of nodejs-assignments https://github.com/AlreadyBored/nodejs-assignments",
+  "description": "https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/file-manager/assignment.md",
   "engines": {
     "node": ">=20.0.0"
   },
@@ -27,17 +27,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlreadyBored/node-nodejs-basics.git"
+    "url": "git+https://github.com/YauhenMurachou/file-manager"
   },
   "keywords": [
     "nodejs",
     "assignments",
     "alreadybored"
   ],
-  "author": "alreadybored",
-  "license": "ISC",
+  "author": "YauhenMurachou",
   "bugs": {
-    "url": "https://github.com/AlreadyBored/node-nodejs-basics/issues"
+    "url": "https://github.com/YauhenMurachou/file-manager/issues"
   },
-  "homepage": "https://github.com/AlreadyBored/node-nodejs-basics#readme"
+  "homepage": "https://github.com/YauhenMurachou/file-manager"
 }

@@ -1,3 +1,3 @@
-# Node.js basics
+File manager task
 
-## !!! Please don't submit Pull Requests to this repository !!!
+https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/file-manager/assignment.md
