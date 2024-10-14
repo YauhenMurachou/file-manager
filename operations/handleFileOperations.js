@@ -12,7 +12,7 @@ export function handleFileOperations(command, args) {
         const readStream = fs.createReadStream(args[0]);
         readStream.pipe(process.stdout);
       } catch (error) {
-        console.log('Operation failed');
+        console.log('Operation failed', error);
       }
       break;
     case 'add':
@@ -23,7 +23,7 @@ export function handleFileOperations(command, args) {
       try {
         fs.writeFileSync(args[0], '');
       } catch (error) {
-        console.log('Operation failed');
+        console.log('Operation failed', error);
       }
       break;
     case 'rn':
@@ -34,7 +34,7 @@ export function handleFileOperations(command, args) {
       try {
         fs.renameSync(args[0], args[1]);
       } catch (error) {
-        console.log('Operation failed');
+        console.log('Operation failed', error);
       }
       break;
     case 'cp':
@@ -47,7 +47,7 @@ export function handleFileOperations(command, args) {
         const writeStream = fs.createWriteStream(path.join(args[1], path.basename(args[0])));
         readStream.pipe(writeStream);
       } catch (error) {
-        console.log('Operation failed');
+        console.log('Operation failed', error);
       }
       break;
     case 'mv':
@@ -63,7 +63,7 @@ export function handleFileOperations(command, args) {
           fs.unlinkSync(args[0]);
         });
       } catch (error) {
-        console.log('Operation failed');
+        console.log('Operation failed', error);
       }
       break;
     case 'rm':
@@ -74,7 +74,7 @@ export function handleFileOperations(command, args) {
       try {
         fs.unlinkSync(args[0]);
       } catch (error) {
-        console.log('Operation failed');
+        console.log('Operation failed', error);
       }
       break;
   }

@@ -11,9 +11,10 @@ export function handleNavigation(command, args) {
         return;
       }
       try {
-        process.chdir(args[0]);
+        const newPath = args.join(' ');
+        process.chdir(newPath);
       } catch (error) {
-        console.log('Operation failed');
+        console.log('Operation failed', error);
       }
       break;
     case 'ls':

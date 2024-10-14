@@ -11,6 +11,6 @@ export function handleHash(args) {
     const hash = crypto.createHash('sha256').update(fileContent).digest('hex');
     console.log(hash);
   } catch (error) {
-    console.log('Operation failed');
+    console.log('Operation failed', error);
   }
 }
